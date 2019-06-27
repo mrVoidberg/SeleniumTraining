@@ -20,10 +20,10 @@ public class test03 {
     @Test
     public void test1(){
 
-        driver.get("http://localhost/litecart/admin/.");
+        driver.get("http://localhost/litecart/admin/");
+        driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("123");
         driver.findElement(By.name("login")).click();
-
     }
 
 
