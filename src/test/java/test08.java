@@ -27,7 +27,7 @@ public class test08 {
     public void test8(){
 
         driver.get("http://localhost/litecart/en/");
-        List<WebElement> elements = driver.findElements(By.xpath("//a[contains(@title,'Duck') and @class='link']"));
+        List<WebElement> elements = driver.findElements(By.xpath("//li[contains(@class,'product')]"));
         for (WebElement e: elements)
         {
             List<WebElement> sticer=e.findElements(By.xpath(".//div[contains(@class,'sticker')]"));
